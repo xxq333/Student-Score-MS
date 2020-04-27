@@ -69,7 +69,7 @@ class Toplevel1:
         top.minsize(152, 1)
         top.maxsize(1604, 881)
         top.resizable(1, 1)
-        top.title("欢迎来到学生成绩管理系统  by:蔺虎，张静")
+        top.title("欢迎来到学生成绩管理系统")
         top.configure(background="#d9d9d9")
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="#000000")
@@ -86,7 +86,7 @@ class Toplevel1:
         self.Canvas1.configure(selectbackground="#c4c4c4")
         self.Canvas1.configure(selectforeground="black")
         self.Canvas1 = tk.Canvas(root, height=100, width=500)  # 创建画布
-        self.image_file = tk.PhotoImage(file="D:\背景图2.gif")  # 加载图片文件
+        self.image_file = tk.PhotoImage(file="背景图2.gif")  # 加载图片文件
         self.image = self.Canvas1.create_image(0, 0, anchor='nw', image=self.image_file)  # 将图片置于画布上
         self.Canvas1.pack(side='top', fill='both', expand=1)  # 放置画布（为上端）
         root.attributes("-alpha", 0.9)
